@@ -8,4 +8,4 @@
 ;(print (macroexpand-1 '(defroute "GET" "/" webpage.top)))
 ;(print (macroexpand-1 '(defroute "GET" "/_/<path:path>" webpage-common.static_resources)))
 (defroute "GET" "/" webpage-top.top)
-(defroute "GET" "/_/<filepath:path>" webpage-common.static_resources filepath)
+(defroute "GET" "/_/<filepath:path>" webpage-common.static_resources)
