@@ -1,5 +1,15 @@
 % include('header')
-<div>
-  Hello World!!!!!!!!
+<div id="content" class="chatView">
+  <form id="chatForm">
+    <textarea id="chatMessage">
+      {{token}}
+    </textarea>
+    <button id="chatSubmitButton">submit</button>
+  </form>
+  <div id="chatList">
+    <div class="chatElem">Hello World</div>
+    <div class="chatElem">Hello World</div>
+  </div>
 </div>
+<script src="{{static_file_host}}/_/js/chat.js" defer></script>
 % include('footer')

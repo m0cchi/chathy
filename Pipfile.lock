@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c90811b0715a08c7e0f8ca11daae939711dbddc3d8cf1291f597e42f603de0b6"
+            "sha256": "96a313416a48cd331f9cb335f52623bf2165ec3f384bbbe5e353b252e0587301"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -44,6 +44,14 @@
             "index": "pypi",
             "version": "==0.12.17"
         },
+        "bottle-utils": {
+            "hashes": [
+                "sha256:4edc79201a7c88b7ad471730136ce4d30e008ef006a0a559bab460d37b5f7c5d",
+                "sha256:c84e582bfe55ddf75d3923d682ec7ca3117c08a66b9ce8c05dae603275664879"
+            ],
+            "index": "pypi",
+            "version": "==2.0.post2"
+        },
         "clint": {
             "hashes": [
                 "sha256:05224c32b1075563d0b16d0015faaf9da43aa214e4a2140e51f08789e7a4c5aa"
@@ -63,6 +71,13 @@
             ],
             "index": "pypi",
             "version": "==0.17.0"
+        },
+        "python-dateutil": {
+            "hashes": [
+                "sha256:7e6584c74aeed623791615e26efd690f29817a27c73085b78e4bad02493df2fb",
+                "sha256:c89805f6f4d64db21ed966fda138f8a5ed7a4fdbc1a8ee329ce1b74e3c74da9e"
+            ],
+            "version": "==2.8.0"
         },
         "pyyaml": {
             "hashes": [
@@ -89,6 +104,13 @@
                 "sha256:4d6d25703efd28fb3d5707f7b3bd4fe66c306159a5c25af10ba26d206a66d00d"
             ],
             "version": "==0.7.7"
+        },
+        "six": {
+            "hashes": [
+                "sha256:3350809f0555b11f552448330d0b52d5f24c91a322ea4a15ef22629740f3761c",
+                "sha256:d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
+            ],
+            "version": "==1.12.0"
         }
     },
     "develop": {}

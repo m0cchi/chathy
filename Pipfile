@@ -9,6 +9,7 @@ verify_ssl = true
 bottle = "*"
 hy = "*"
 pyyaml = "*"
+bottle-utils = "*"
 
 [requires]
 python_version = "3.7"

@@ -9,7 +9,15 @@
 (defmacro defroute [method path _fn]
   (setv args (extract-args path))
   (setv uniq-name (HySymbol (+ "h_" (gensym))))
-  `(with-decorator (bottle.route ~path :method ~method)
+  (setv is-csrf-protect (not (or (= method "GET")
+                                 (= method "HEAD")
+                                 (= method "TRACE")
+                                 (= method "OPTIONS"))))
+
+  (setv decolators `((bottle.route ~path :method ~method)))
+  (if is-csrf-protect
+      (.append decolators 'bottle_utils.csrf.csrf_protect))
+  `(with-decorator ~@decolators
     (defn ~uniq-name [~@args]
       (setv __fn ~_fn)
       (setv __args ~args)
