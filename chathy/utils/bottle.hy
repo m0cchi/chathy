@@ -1,6 +1,6 @@
 
 (defmacro render [name &rest args]
-  `(bottle.template "base" :content ~name ~@args))
+  `(bottle.template ~name ~@args))
 
 (defmacro defroute [method path none-arg-fn]
   (setv uniq-name (HySymbol (+ "h_" (gensym))))
